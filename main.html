@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Monkey King’s Bridge: Ajanta, Cave 17</title>
+<style>
+:root{--bg:#f1e2c3;--card:#f8ecd2;--ink:#3b2412;--accent:#a8452a;--line:#c9a46a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d140c;--card:#2a1c11;--ink:#ecd9b5;--accent:#e08a5a;--line:#6b4a28}}
+:root[data-theme="dark"]{--bg:#1d140c;--card:#2a1c11;--ink:#ecd9b5;--accent:#e08a5a;--line:#6b4a28}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.5}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+h1{font-size:1.5rem;margin:0;letter-spacing:.02em}
+.sub{margin:2px 0 12px;font-size:.9rem;opacity:.8;font-style:italic}
+.frame{border:3px double var(--line);background:var(--card);border-radius:6px;padding:6px}
+svg{display:block;width:100%;height:auto;border-radius:3px}
+.cap{margin:12px 2px 0;min-height:7.5em}
+.cap h2{font-size:1.1rem;margin:0 0 4px;color:var(--accent)}
+.cap p{margin:0 0 6px;font-size:.98rem}
+.note{font-size:.82rem;opacity:.75;font-style:italic}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+button{font:inherit;font-size:.9rem;background:var(--accent);color:#fff;border:0;border-radius:4px;padding:8px 14px;cursor:pointer;min-height:40px}
+button.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.dots{display:flex;gap:6px;margin-left:auto}
+.dot{width:12px;height:12px;border-radius:50%;border:1px solid var(--accent);background:transparent;padding:0;min-height:0}
+.dot.on{background:var(--accent)}
+.sim{display:none;margin-top:10px;padding:10px;border:1px dashed var(--line);border-radius:4px}
+.sim.show{display:block}
+.meters{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:.9rem}
+.meter{flex:1;min-width:140px;height:12px;background:rgba(0,0,0,.15);border-radius:6px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:#4c6b3a;transition:width .2s,background .2s}
+.scene{display:none}.scene.active{display:inline}
+.bob{animation:bob 1.6s ease-in-out infinite}.bob2{animation:bob 2.1s ease-in-out infinite .4s}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.wave{animation:wave 6s linear infinite}
+@keyframes wave{to{transform:translateX(-80px)}}
+.fall{animation:fall 7s ease-in-out infinite}
+@keyframes fall{0%{transform:translate(0,0)}35%{transform:translate(50px,185px)}100%{transform:translate(560px,190px)}}
+.float{animation:float 9s linear infinite}
+@keyframes float{0%{transform:translate(-60px,0)}100%{transform:translate(520px,6px)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{50%{transform:scale(1.25);opacity:.35}}
+.arrow{animation:shoot 2.2s linear infinite}
+@keyframes shoot{0%{transform:translate(60px,-20px);opacity:0}15%{opacity:1}100%{transform:translate(-300px,50px);opacity:0}}
+.petal{animation:drift 6s linear infinite}
+@keyframes drift{0%{transform:translate(0,-20px) rotate(0);opacity:0}20%{opacity:1}100%{transform:translate(-40px,320px) rotate(300deg);opacity:0}}
+.flash{animation:flash 1.4s ease-in-out infinite}
+@keyframes flash{50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>The Monkey King’s Bridge</h1>
+<p class="sub">An animated storyboard of the Mahakapi Jataka, Ajanta Cave 17 (c. 5th century CE)</p>
+
+<div class="frame">
+<svg viewBox="0 0 800 450" role="img" aria-label="Animated storyboard scene">
+<defs>
+<g id="mk"><path d="M8 6q22 2 18-22" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><ellipse cx="0" cy="0" rx="10" ry="13" fill="currentColor"/><circle cx="0" cy="-17" r="8" fill="currentColor"/><circle cx="-8" cy="-19" r="3.5" fill="currentColor"/><circle cx="8" cy="-19" r="3.5" fill="currentColor"/><circle cx="0" cy="-15" r="5" fill="#f3d9a8"/><circle cx="-2" cy="-16" r="1" fill="#222"/><circle cx="2" cy="-16" r="1" fill="#222"/></g>
+<g id="hm"><circle cx="0" cy="-34" r="9" fill="#7a4a2a"/><path d="M-12 -24h24l6 50h-36z" fill="currentColor"/><rect x="-5" y="-26" width="10" height="5" fill="#e8b04a"/></g>
+<g id="tree"><rect x="-22" y="0" width="44" height="190" fill="#6b3f1f"/><circle cx="0" cy="-20" r="90" fill="#3d5a2e"/><circle cx="-70" cy="10" r="65" fill="#4c6b3a"/><circle cx="75" cy="5" r="68" fill="#4c6b3a"/><circle cx="-30" cy="-60" r="50" fill="#567a42"/><g fill="#e8a020"><circle cx="-40" cy="0" r="7"/><circle cx="30" cy="-30" r="7"/><circle cx="-90" cy="30" r="7"/><circle cx="60" cy="40" r="7"/><circle cx="0" cy="25" r="7"/></g></g>
+<pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".7" fill="#000" opacity=".12"/></pattern>
+</defs>
+
+<!-- SCENE 1 -->
+<g class="scene active" id="s0">
+<rect width="800" height="450" fill="#e8c98a"/><circle cx="660" cy="80" r="40" fill="#f6e3a8"/>
+<path d="M0 330q120-90 260-20t260-30 280 50v120H0z" fill="#8a6a3a" opacity=".55"/>
+<rect y="340" width="800" height="110" fill="#1f4e79"/>
+<g fill="none" stroke="#8fb8d8" stroke-width="3" opacity=".6"><path class="wave" d="M-80 370q20-10 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/><path class="wave" d="M-80 410q20-10 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/></g>
+<use href="#tree" x="170" y="165"/>
+<circle class="fall" cx="250" cy="150" r="9" fill="#e8a020"/>
+<g style="color:#b0763a"><use class="bob" href="#mk" x="95" y="190" style="color:#b0763a"/><use class="bob2" href="#mk" x="200" y="215" style="color:#8a5a2a"/><use class="bob" href="#mk" x="260" y="175" style="color:#b0763a"/><use class="bob2" href="#mk" x="110" y="130" style="color:#8a5a2a"/></g>
+<g class="bob2"><path d="M148 70l8-14 8 10 8-10 8 14z" fill="#e8b04a"/><use href="#mk" x="170" y="105" style="color:#d6a038" transform="translate(170 105) scale(1.5) translate(-170 -105)"/></g>
+</g>
+
+<!-- SCENE 2 -->
+<g class="scene" id="s1">
+<rect width="800" height="450" fill="#d9a86a"/><circle cx="120" cy="80" r="36" fill="#f6e3a8"/>
+<rect y="300" width="800" height="150" fill="#1f4e79"/>
+<g fill="none" stroke="#8fb8d8" stroke-width="3" opacity=".6"><path class="wave" d="M-80 340q20-10 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/><path class="wave" d="M-80 400q20-10 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/></g>
+<circle class="float" cx="0" cy="318" r="10" fill="#e8a020"/>
+<path d="M560 300v-90h200v90z" fill="#a8452a"/><path d="M545 210l115-70 115 70z" fill="#c9822b"/><rect x="640" y="240" width="40" height="60" fill="#3b2412"/>
+<use href="#hm" x="600" y="266" style="color:#f1e2c3"/><path d="M570 218q30-34 60 0z" fill="#e8b04a"/>
+<circle class="pulse" cx="600" cy="250" r="30" fill="none" stroke="#f6e3a8" stroke-width="3"/>
+<g fill="#e8b04a"><circle cx="560" cy="150" r="5" class="bob"/><circle cx="740" cy="140" r="5" class="bob2"/></g>
+</g>
+
+<!-- SCENE 3 -->
+<g class="scene" id="s2">
+<rect width="800" height="450" fill="#c98f52"/>
+<rect y="340" width="800" height="110" fill="#1f4e79"/>
+<g fill="none" stroke="#8fb8d8" stroke-width="3" opacity=".6"><path class="wave" d="M-80 380q20-10 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/></g>
+<use href="#tree" x="170" y="165"/>
+<g><use class="bob" href="#mk" x="90" y="200" style="color:#b0763a"/><use class="bob2" href="#mk" x="210" y="225" style="color:#8a5a2a"/><use class="bob" href="#mk" x="280" y="185" style="color:#b0763a"/><use class="bob2" href="#mk" x="140" y="145" style="color:#8a5a2a"/></g>
+<g style="color:#2f5d3a"><use href="#hm" x="560" y="300" style="color:#8c2f1f"/><use href="#hm" x="620" y="310" style="color:#8c2f1f"/><use href="#hm" x="680" y="300" style="color:#8c2f1f"/><use href="#hm" x="740" y="312" style="color:#8c2f1f"/></g>
+<g fill="none" stroke="#3b2412" stroke-width="3"><path d="M545 270q-14 28 0 56"/><path d="M605 280q-14 28 0 56"/><path d="M665 270q-14 28 0 56"/></g>
+<g stroke="#3b2412" stroke-width="3"><g class="arrow"><line x1="540" y1="280" x2="580" y2="270"/><path d="M540 280l10-5m-10 5l10 5" fill="none"/></g><g class="arrow" style="animation-delay:.7s"><line x1="600" y1="290" x2="640" y2="280"/></g><g class="arrow" style="animation-delay:1.4s"><line x1="660" y1="280" x2="700" y2="270"/></g></g>
+<rect class="flash" width="800" height="450" fill="#a81c1c" opacity=".18"/>
+</g>
+
+<!-- SCENE 4 -->
+<g class="scene" id="s3">
+<rect width="800" height="450" fill="#d9a86a"/>
+<rect y="330" width="800" height="120" fill="#1f4e79"/>
+<g fill="none" stroke="#8fb8d8" stroke-width="3" opacity=".6"><path class="wave" d="M-80 370q20-10 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/><path class="wave" d="M-80 415q20-10 40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0t40 0"/></g>
+<path d="M0 330v-120h60v120z" fill="#6b3f1f"/><circle cx="50" cy="190" r="55" fill="#4c6b3a"/>
+<path d="M610 330q10-110 190-125v125z" fill="#7a5a30"/><circle cx="745" cy="190" r="45" fill="#567a42"/>
+<path id="kingbody" d="M70 205Q400 95 625 205" fill="none" stroke="#d6a038" stroke-width="16" stroke-linecap="round"/>
+<path d="M610 214l30 8" stroke="#4c6b3a" stroke-width="5"/>
+<use href="#mk" x="62" y="214" style="color:#d6a038"/>
+<g id="troop"></g><g id="dev"></g>
+</g>
+
+<!-- SCENE 5 -->
+<g class="scene" id="s4">
+<rect width="800" height="450" fill="#e8c98a"/>
+<rect y="360" width="800" height="90" fill="#6b8f4a"/>
+<circle class="pulse" cx="400" cy="300" r="120" fill="#f6e3a8" opacity=".6"/>
+<use href="#hm" x="260" y="330" style="color:#f1e2c3"/><path d="M230 295q30-26 60 0z" fill="#e8b04a"/>
+<g transform="translate(400 330) rotate(-80)"><use href="#mk" style="color:#d6a038" transform="scale(2.2)"/></g>
+<path d="M360 250l10-18 10 12 10-12 10 18z" fill="#e8b04a"/>
+<g fill="#e8788a"><ellipse class="petal" cx="540" cy="40" rx="8" ry="4"/><ellipse class="petal" style="animation-delay:1.5s" cx="600" cy="30" rx="8" ry="4"/><ellipse class="petal" style="animation-delay:3s" cx="480" cy="30" rx="8" ry="4"/><ellipse class="petal" style="animation-delay:4.4s" cx="660" cy="40" rx="8" ry="4"/></g>
+<use href="#hm" x="620" y="330" style="color:#8c2f1f"/><use href="#hm" x="690" y="338" style="color:#2f5d3a"/>
+</g>
+<rect width="800" height="450" fill="url(#grain)"/>
+</svg>
+</div>
+
+<div class="cap"><h2 id="ct"></h2><p id="cp"></p><p class="note" id="cn"></p></div>
+
+<div class="sim" id="sim">
+<strong>Simulation: the living bridge</strong>
+<div class="bar"><button id="go">Release the troop</button><button id="dv" class="alt">Devadatta leaps</button><button id="rs" class="alt">Reset</button></div>
+<div class="meters"><span>Crossed: <b id="cnt">0</b> / 80,000</span><span style="flex:1;display:flex;gap:8px;align-items:center">Strain <span class="meter"><i id="st"></i></span></span></div>
+<p class="note" id="sm" style="margin:6px 0 0">The king has stretched his own body across the Ganga, but the bamboo he tied fell a span short.</p>
+</div>
+
+<div class="bar">
+<button class="alt" id="pv">‹ Prev</button><button id="pl">Pause</button><button class="alt" id="nx">Next ›</button>
+<div class="dots" id="dots"></div>
+</div>
+</div>
+
+<script>
+const S=[
+{t:"1. The Mango Grove on the Ganga",p:"A great monkey king, the Bodhisatta, lives in a mango tree on the river bank with eighty thousand followers. He warns them to pick every fruit that hangs over the water, for a single mango carried downstream could bring danger.",n:"Panel 1 · A mango, missed by the troop, slips from its branch into the current."},
+{t:"2. The Mango Reaches Varanasi",p:"One fruit hidden in an ant’s nest is overlooked. It drifts to Varanasi, where the king tastes it and is enchanted. He follows the river upstream with his army to find the tree that bears such fruit.",n:"Panel 2 · The king’s delight turns to desire: the sweetest fruit must be his."},
+{t:"3. The Archers Surround the Tree",p:"Seeing the monkeys, the king orders his archers to shoot them down and feast on mango and monkey alike. Trapped between the arrows and the wide river, the troop cowers in fear.",n:"Panel 3 · The sky fills with arrows. Only the Monkey King can save his people."},
+{t:"4. The King Becomes a Bridge",p:"The Monkey King leaps across the river, ties a bamboo shoot to a tree and to his foot, and stretches his body over the water. It falls one span short, so he grips a branch with his hands and lets his followers cross over his back.",n:"Panel 4 · Try it: release the troop and watch the strain on the king. Then see what Devadatta does."},
+{t:"5. The Compassion of a King",p:"Devadatta, a jealous monkey, jumps on his back and breaks it. The Varanasi king, moved by such sacrifice, has him lowered gently and cared for. The dying Bodhisatta teaches that a ruler who puts his people first is truly a king.",n:"Panel 5 · In Cave 17 this tale is painted in flowing, continuous scenes, a form of visual storytelling."}
+];
+let i=0,auto=true,tm;
+const $=id=>document.getElementById(id);
+const dots=$("dots");
+S.forEach((_,k)=>{const b=document.createElement("button");b.className="dot";b.setAttribute("aria-label","Scene "+(k+1));b.onclick=()=>{auto=false;upd();show(k)};dots.appendChild(b)});
+function show(k){i=(k+S.length)%S.length;
+document.querySelectorAll(".scene").forEach((g,j)=>g.classList.toggle("active",j===i));
+$("ct").textContent=S[i].t;$("cp").textContent=S[i].p;$("cn").textContent=S[i].n;
+[...dots.children].forEach((d,j)=>d.classList.toggle("on",j===i));
+$("sim").classList.toggle("show",i===3);
+if(i!==3)resetSim();}
+function upd(){$("pl").textContent=auto?"Pause":"Play";clearInterval(tm);if(auto)tm=setInterval(()=>show(i+1),i===3?20000:9000)}
+$("pl").onclick=()=>{auto=!auto;upd()};
+$("nx").onclick=()=>{show(i+1);upd()};$("pv").onclick=()=>{show(i-1);upd()};
+function tick(){clearInterval(tm);if(auto)tm=setInterval(()=>{show(i+1);tick()},i===3?22000:9000)}
+$("pl").onclick=()=>{auto=!auto;$("pl").textContent=auto?"Pause":"Play";tick()};
+$("nx").onclick=()=>{show(i+1);tick()};$("pv").onclick=()=>{show(i-1);tick()};
+dots.querySelectorAll("button").forEach((b,k)=>b.onclick=()=>{auto=false;$("pl").textContent="Play";clearInterval(tm);show(k)});
+
+/* Bridge simulation */
+const P0=[70,205],P1=[400,95],P2=[625,205],NS="http://www.w3.org/2000/svg";
+const B=t=>[(1-t)*(1-t)*P0[0]+2*(1-t)*t*P1[0]+t*t*P2[0],(1-t)*(1-t)*P0[1]+2*(1-t)*t*P1[1]+t*t*P2[1]];
+let sp=[],crossed=0,queued=0,last=0,raf=0,devT=0,hurt=false,spawnAcc=0;
+function mkUse(color,sc){const u=document.createElementNS(NS,"use");u.setAttribute("href","#mk");u.style.color=color;u.dataset.s=sc||1;$("troop").appendChild(u);return u}
+function place(u,t,dy){const[p,q]=B(t);u.setAttribute("transform","translate("+p+" "+(q-14+(dy||0))+") scale("+u.dataset.s+")")}
+function render(){$("cnt").textContent=(crossed*2000).toLocaleString();
+let s=Math.min(100,sp.length*9);if(hurt)s=100;
+const m=$("st");m.style.width=s+"%";m.style.background=s>80?"#a81c1c":s>50?"#c9822b":"#4c6b3a"}
+function loop(now){const dt=Math.min(.05,(now-last)/1000||0);last=now;
+if(queued>0){spawnAcc+=dt;if(spawnAcc>.35){spawnAcc=0;queued--;const u=mkUse(["#b0763a","#8a5a2a","#a06a30"][queued%3]);sp.push({u,t:0})}}
+sp.forEach(o=>{o.t+=dt*.2;place(o.u,Math.min(o.t,1))});
+sp=sp.filter(o=>{if(o.t>=1){o.u.remove();crossed++;return false}return true});
+if(devT){const p=(now-devT)/700;const d=$("dev");
+if(!d.firstChild){const u=document.createElementNS(NS,"use");u.setAttribute("href","#mk");u.style.color="#8c2f1f";d.appendChild(u)}
+const u=d.firstChild;const[x,y]=B(.5);u.setAttribute("transform","translate("+x+" "+(y-14-Math.max(0,1-p)*140)+") scale(1.2)");
+if(p>=1&&!hurt){hurt=true;$("kingbody").setAttribute("stroke","#e8d8b0");$("sm").textContent="Devadatta’s weight breaks the Bodhisatta’s back, yet he keeps holding on until the last follower is safe."}}
+render();
+if(queued>0||sp.length||devT){raf=requestAnimationFrame(loop)}else{raf=0}}
+function kick(){if(!raf){last=performance.now();raf=requestAnimationFrame(loop)}}
+$("go").onclick=()=>{if(queued||sp.length)return;crossed=0;queued=40;$("sm").textContent="Eighty thousand monkeys cross, each treading on the back of their king.";kick()};
+$("dv").onclick=()=>{if(devT)return;devT=performance.now();kick()};
+function resetSim(){cancelAnimationFrame(raf);raf=0;sp=[];queued=0;crossed=0;devT=0;hurt=false;$("troop").innerHTML="";$("dev").innerHTML="";$("kingbody").setAttribute("stroke","#d6a038");$("sm").textContent="The king has stretched his own body across the Ganga, but the bamboo he tied fell a span short.";render()}
+$("rs").onclick=resetSim;
+show(0);tick();
+</script>
+</body>
+</html>
